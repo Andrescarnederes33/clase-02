@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> </head>
+
+    <body>
+        <div style="display: flex !important">
+            <hr
+                style="
+                    width: 100% !important;
+                    display: block !important;
+                    margin: 33px 0 !important;
+                "
+            />
+        </div>
+        <br />
+
+        <p class="blue-text">Estimado usuario,</p>
+        <p>
+            Por favor, confirme su correo en el siguiente enlace para acceder de
+            forma correcta a todas a la plataforma de Indiabana.
+        </p>
+
+        <a
+            href="<%= process.env.APP_URL %>/api/auth/confirm?token=<%= confirmToken %>"
+            class="btn btn-primary btn-darkblue"
+            >Confirmar cuenta
+        </a>
+        <br />
+
+        <p>
+            No respondas, esta dirección de correo electrónico no es
+            monitoreada.
+        </p>
+    </body>
+</html>
